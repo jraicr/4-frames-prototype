@@ -8,8 +8,6 @@ The main functionality is developed and represents a prototype of the experience
 
 This game was designed as an activity for the course **Web Development in Client Environment**.
 
-:link: [**Play the game**](https://4-frames-prototype.vercel.app)
+:link: [**Play the game**](https://4frames.jrai.dev)
 
-<p align="center">
-<img src="readme-pics/game-screenshot.jpg" width=70% alt="Screenshot from 4-Frames">
-</p>
+![4 Frames Screenshot](../media/images/game-screenshot.jpg?raw=true)
