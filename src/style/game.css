@@ -1,0 +1,141 @@
+.pic-container {
+  min-width: 320px;
+  max-width: 640px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  text-rendering: optimizelegibility;
+}
+
+.pic-container a {
+  color: var(--highlight-color);
+  padding: 10px;
+  margin: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: var(--highlight-color);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.pic-container a:hover {
+  color: var(--main-headline);
+  text-decoration: underline;
+  stroke: #bb86fc;
+}
+
+#container-pic-links {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.pic-container a.active {
+  color: var(--main-headline);
+  background-color: var(--highlight-color);
+  border-radius: 10px;
+}
+
+.game-flow-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.tries-container {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--surface-dp-4);
+  color: var(--medium-emphasys-text);
+  visibility: hidden;
+}
+
+.tries-container p {
+  margin: 0;
+  color: var(--high-emphasys-text);
+}
+
+.tried-words {
+  margin: 10px;
+}
+
+.output {
+  height: 24px;
+  color: var(--medium-emphasys-text);
+  text-align: left;
+  margin-top: 8px;
+  margin-left: -150px;
+}
+
+.send-button {
+  font-family: inherit;
+  font-feature-settings: "ss03", "cv02", "cv11";
+  font-variation-settings: normal;
+  color: var(--main-headline);
+  background-color: var(--highlight-color);
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  border-color: var(--highlight-color);
+}
+
+.send-button:hover {
+  background-color: var(--hover-button);
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  background-color: var(--disabled-button);
+  color: var(--disabled-surface);
+  font-size: 1.1rem;
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  cursor: not-allowed;
+}
+
+input#word-guessed {
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 10px;
+  border-width: 0 0 1px;
+  border-color: var(--highlight-color);
+  background-color: var(--background);
+  caret-color: var(--text-color);
+}
+
+input#word-guessed::placeholder {
+  color: var(--secondary-headline-color);
+}
+
+input#word-guessed:focus {
+  outline: none;
+  border-width: 0 0 2px;
+}
+
+input#word-guessed:focus::placeholder {
+  color: transparent;
+}
+
+input#word-guessed:disabled {
+  border-width: 0 0 1px;
+  border-color: var(--disabled-surface);
+  cursor: not-allowed;
+}
+
+input#word-guessed:disabled::placeholder {
+  color: transparent;
+}
+
+.surface {
+  background-color: var(--surface);
+}

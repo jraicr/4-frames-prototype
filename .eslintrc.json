@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-manzdev",
+  "rules": {
+    "indent": ["error", 4, { "switchcase": 1 }]
+  }
+}

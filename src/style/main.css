@@ -1,0 +1,139 @@
+/**
+ * El estilo CSS debería ser totalmente refactorizado. Esto es un prototipo por rehacer.
+ *
+ * @Author: J. Rai.
+ * */
+:root {
+  --background: #110219;
+  --on-background: #fff;
+  --main-headline: hsl(0deg 0% 100%);
+  --secondary-headline-color: hsl(271deg 25% 60% / 90.4%);
+  --text-color: hsl(263deg 20% 76%);
+  --highlight-color: #a332db;
+  --medium-emphasys-text: #ffffff60;
+  --high-emphasys-text: #ffffff87;
+  --hover-button: #c758ff;
+  --surface-dp-4: #2e223b73;
+  --disabled-surface: #bb86fc30;
+  --active-button: #e2cdfd;
+  --error: #e24f4f;
+}
+
+html {
+  scroll-behavior: smooth;
+  tab-size: 4;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+  font-feature-settings: "ss03", "cv02", "cv11";
+  font-variation-settings: normal;
+}
+
+body {
+  align-items: center;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.75em;
+  color: var(--on-background);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--on-background);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 span.logo-super {
+  vertical-align: super;
+  font-size: 0.725rem;
+  font-weight: 600;
+  margin-left: 3px;
+  text-transform: uppercase;
+  color: var(--hover-button);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+#header {
+  text-align: center;
+}
+
+.rules {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 35px;
+  border-width: 2px;
+  border-color: var(--highlight-color);
+  border-style: solid;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.rules:hover {
+  background-color: var(--surface-dp-4);
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.button {
+  font-family: inherit;
+  font-feature-settings: "ss03", "cv02", "cv11";
+  font-variation-settings: normal;
+  color: var(--main-headline);
+  background-color: var(--highlight-color);
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  font-weight: 500;
+  border-radius: 15px;
+  border-color: var(--highlight-color);
+}
+
+.button:hover {
+  background-color: var(--hover-button);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: var(--active-button);
+}
+
+.timer-container {
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--surface-dp-4);
+  color: var(--text-color);
+  visibility: hidden;
+  min-width: 90px;
+}
+
+.timer-container p {
+  color: var(--main-headline);
+  margin: 0;
+  margin-bottom: 4px;
+}

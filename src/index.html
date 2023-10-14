@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Avoid indexing for searchers since this is just a prototype -->
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Guess the movie game through frames. Created by J. Rai.">
+  <title>4 Frames</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style/main.css">
+
+  <!-- External font -->
+  <link rel="preconnect" href="https://rsms.me/" crossorigin />
+
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="
+                this.onload = null; this.rel = 'stylesheet'
+                " />
+  <noscript>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </noscript>
+
+  <!-- Scripts -->
+  <script defer type="module" src="./js/game.js"></script>
+
+  <!-- Game related styles can be loaded async -->
+  <link rel="preload" href="./style/game.css" as="style">
+  <link rel="stylesheet" href="./style/game.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="./style/game.css">
+  </noscript>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="/">4 Frames<span class="logo-super">Prototype</span></a></h1>
+    </header>
+
+    <div class="rules">
+      <h2>Las reglas son sencillas</h2>
+      <ul>
+        <li>Tienes 2 minutos para adivinar la película.</li>
+        <li>4 intentos como máximo.</li>
+        <li>Cada intento fallido resta 10 segundos.</li>
+        <li>Cada intento fallido te mostrará una nueva imagen de la película.</li>
+      </ul>
+    </div>
+
+    <button type="button" id="game-launcher" class="button">Iniciar</button>
+
+    <div class="pic-container"></div>
+    <div id="output-results"></div>
+    <div id="user-input-container"></div>
+    <div class="output"></div>
+    <div class="game-flow-wrapper">
+      <div id="tries" class="tries-container">
+        <div class="tried-words"></div>
+      </div>
+
+      <div class="timer-container">
+        <div id="timer-countdown">120 segundos</div>
+      </div>
+    </div>
+
+  </div>
+
+</html>
