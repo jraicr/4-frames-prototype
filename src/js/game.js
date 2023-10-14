@@ -395,7 +395,7 @@ function setPicture(frame) {
   const currentPic = document.getElementById("movie-picture");
 
   if (currentPic) {
-    currentPic.src = pictureList[pictureList.length - 1].src;
+    currentPic.src = getImageUrl(`frame-${frame}`, "webp");
   }
 }
 
